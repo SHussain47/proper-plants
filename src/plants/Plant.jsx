@@ -3,7 +3,7 @@ export default function Plant({ plant }) {
     <li>
       <figure>{plant.image}</figure>
       <h4>{plant.name}</h4>
-      
+      <button>Add to Cart</button>
     </li>
   )
 }

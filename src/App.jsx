@@ -3,7 +3,7 @@ import PLANTS from "./data";
 import PlantSection from "./plants/PlantSelection";
 
 export default function App() {
-
+  const [cart, setCart] = useState(null);
   return (
     <>
       <h1>Plant Shop</h1>
