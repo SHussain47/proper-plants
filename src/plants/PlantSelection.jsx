@@ -1,17 +1,15 @@
-import Plant from "./Plant"
+import Plant from "./Plant";
 
-
-
-export default function PlantSection({ plants }) {
+export default function PlantSection({ plants, addToCart }) {
   return (
     <section>
       <h2>Plants</h2>
       <ul>
         {plants.map((plant) => {
           // console.log(plant);
-          return <Plant key={plant.id} plant={plant} />
+          return <Plant key={plant.id} plant={plant} addToCart={addToCart} />;
         })}
       </ul>
     </section>
-  )
+  );
 }
